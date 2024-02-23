@@ -52,7 +52,7 @@
                                                     <constraint firstAttribute="height" constant="117" id="uco-c7-ufC"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="HomeText" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wW4-yf-CRV" userLabel="TextHomeView">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="HomeText" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wW4-yf-CRV" userLabel="TextHomeView">
                                                 <rect key="frame" x="22" y="173" width="330" height="388"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -369,22 +369,25 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                     <constraint firstAttribute="width" constant="256" id="w3A-ho-TfP"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrJ-eW-JMS">
-                                                <rect key="frame" x="20" y="180" width="335" height="173"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrJ-eW-JMS">
+                                                <rect key="frame" x="20" y="180" width="335" height="250"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                 </accessibility>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="X9v-XX-ebM"/>
+                                                </constraints>
                                                 <string key="text">This design aid is intended for use by WRAP Iowa approved wheelchair ramps to determine the angle at which stringer ends need to be cut based on the length of the stringer as well as the difference in height from the ground from one end of the stringer to the other end. Use at your own risk.</string>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="uFg-4a-Eeg" userLabel="Stack View1">
-                                                <rect key="frame" x="20" y="370" width="316" height="80"/>
+                                                <rect key="frame" x="20" y="447" width="316" height="46"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Total Stringer Length (Inches)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9y-EG-KZD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="80"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" text="Enter Total Stringer Length (Inches)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9y-EG-KZD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="46"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                             <bool key="isElement" value="NO"/>
@@ -394,7 +397,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="FirstRiserHeightEntry" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="168" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3TJ-fR-SjK" userLabel="FirstRiserHeightEntry">
-                                                        <rect key="frame" x="157" y="23" width="60" height="34"/>
+                                                        <rect key="frame" x="157" y="23" width="60" height="0.0"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="60" id="nZO-OT-V32"/>
                                                         </constraints>
@@ -405,7 +408,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="SecondRiserHeightEntry" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yB8-DD-G2d" userLabel="SecondRiserHeightEntry">
-                                                        <rect key="frame" x="224" y="23" width="50" height="34"/>
+                                                        <rect key="frame" x="224" y="6" width="50" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="aEN-On-Eya"/>
                                                         </constraints>
@@ -413,7 +416,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="/16" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KXy-rz-3Iu">
-                                                        <rect key="frame" x="281" y="23" width="35" height="34"/>
+                                                        <rect key="frame" x="281" y="6" width="35" height="34"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                         </accessibility>
@@ -432,7 +435,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="U9B-hv-q7o" userLabel="Stack View3">
                                                 <rect key="frame" x="62" y="667" width="263" height="80"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cut Angle (Degrees)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5W-jO-MN4">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" text="Cut Angle (Degrees)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5W-jO-MN4">
                                                         <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -514,10 +517,10 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="N7M-wa-AH2" userLabel="Stack View2">
-                                                <rect key="frame" x="20" y="474" width="325" height="70"/>
+                                                <rect key="frame" x="20" y="517" width="325" height="27"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Total End-To-End Height (Inches)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Le1-tJ-lmb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="154" height="70"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="154" height="27"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                             <bool key="isElement" value="NO"/>
@@ -530,7 +533,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="StringerHeightEntry" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="28" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EqT-Hf-mBe" userLabel="StringerHeightEntry">
-                                                        <rect key="frame" x="162" y="18" width="60" height="34"/>
+                                                        <rect key="frame" x="162" y="0.0" width="60" height="27"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="8Ae-SK-hiO"/>
                                                             <constraint firstAttribute="width" constant="60" id="dmm-O8-dpe"/>
@@ -539,7 +542,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tuH-Yj-NQ1">
-                                                        <rect key="frame" x="230" y="18" width="50" height="34"/>
+                                                        <rect key="frame" x="230" y="0.0" width="50" height="27"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="P1L-y6-dsH"/>
                                                         </constraints>
@@ -547,7 +550,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="/16" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAq-WN-OcP">
-                                                        <rect key="frame" x="288" y="18" width="37" height="34"/>
+                                                        <rect key="frame" x="288" y="0.0" width="37" height="27"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="37" id="b5Q-vE-pNZ"/>
                                                         </constraints>
@@ -858,7 +861,7 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMP-jB-Owb" userLabel="InstructionView">
                                                 <rect key="frame" x="0.0" y="143" width="422" height="470"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wwb-KX-9kW">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wwb-KX-9kW">
                                                         <rect key="frame" x="20" y="10" width="382" height="450"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -881,7 +884,7 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0H-62-j8T" userLabel="OverrideTextView">
                                                 <rect key="frame" x="0.0" y="618" width="422" height="180"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EuE-WN-V4g">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EuE-WN-V4g">
                                                         <rect key="frame" x="20" y="10" width="382" height="160"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -1246,6 +1249,7 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                     <constraint firstItem="6r9-Tr-pgW" firstAttribute="trailing" secondItem="vFb-WR-z6E" secondAttribute="trailing" id="OHN-Fg-07D"/>
                                     <constraint firstItem="6r9-Tr-pgW" firstAttribute="top" secondItem="vFb-WR-z6E" secondAttribute="top" id="YxI-DA-cpo"/>
                                     <constraint firstItem="6r9-Tr-pgW" firstAttribute="leading" secondItem="vFb-WR-z6E" secondAttribute="leading" id="jJA-KA-wB1"/>
+                                    <constraint firstItem="6r9-Tr-pgW" firstAttribute="width" secondItem="f6B-6v-ONZ" secondAttribute="width" multiplier="1.10761" id="qNl-oe-s1b"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="vFb-WR-z6E"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="f6B-6v-ONZ"/>
