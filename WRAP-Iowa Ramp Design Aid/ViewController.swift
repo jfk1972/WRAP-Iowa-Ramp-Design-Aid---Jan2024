@@ -5,7 +5,7 @@
 //  Created by Joseph Knight on 1/31/20.
 //  Copyright © 2020 Joseph Knight. All rights reserved.
 //
-
+// Need to resolve side to side motion
 import UIKit
 import SafariServices
 
