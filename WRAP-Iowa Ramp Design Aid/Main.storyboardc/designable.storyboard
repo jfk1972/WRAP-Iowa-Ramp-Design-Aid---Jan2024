@@ -353,10 +353,10 @@ Use the buttons below to select the functionality that you wish to exercise or 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="StringerScroll" translatesAutoresizingMaskIntoConstraints="NO" id="ciF-4I-e9c" userLabel="ScrollStringerView">
-                                <rect key="frame" x="0.0" y="77" width="335" height="886"/>
+                                <rect key="frame" x="0.0" y="77" width="335" height="905"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" restorationIdentifier="StringerContent" translatesAutoresizingMaskIntoConstraints="NO" id="adJ-Sq-cOb" userLabel="ContentStringerView">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="915"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="934.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-256" translatesAutoresizingMaskIntoConstraints="NO" id="Elb-zX-JV0">
                                                 <rect key="frame" x="39.5" y="35" width="256" height="117"/>
@@ -370,7 +370,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrJ-eW-JMS">
-                                                <rect key="frame" x="20" y="180" width="295" height="225"/>
+                                                <rect key="frame" x="20" y="180" width="295" height="202"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -381,46 +381,48 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="uFg-4a-Eeg" userLabel="Stack View1">
-                                                <rect key="frame" x="20" y="422" width="276" height="58"/>
+                                                <rect key="frame" x="20" y="399" width="276" height="81"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Enter Total Stringer  Length (Inches)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9y-EG-KZD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="58"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="81"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                             <bool key="isElement" value="NO"/>
                                                         </accessibility>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="FirstRiserHeightEntry" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="168" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3TJ-fR-SjK" userLabel="FirstRiserHeightEntry">
-                                                        <rect key="frame" x="117" y="23" width="60" height="12"/>
+                                                        <rect key="frame" x="157" y="23" width="40" height="35"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="60" id="nZO-OT-V32"/>
+                                                            <constraint firstAttribute="width" constant="40" id="nZO-OT-V32"/>
+                                                            <constraint firstAttribute="height" constant="35" id="wbM-ut-fug"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
                                                         <connections>
                                                             <outlet property="delegate" destination="IiD-mD-6Ai" id="Kys-cn-fYR"/>
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="SecondRiserHeightEntry" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yB8-DD-G2d" userLabel="SecondRiserHeightEntry">
-                                                        <rect key="frame" x="184" y="12" width="50" height="34"/>
+                                                        <rect key="frame" x="204" y="23.5" width="30" height="34"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="50" id="aEN-On-Eya"/>
+                                                            <constraint firstAttribute="width" constant="30" id="aEN-On-Eya"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="/16" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KXy-rz-3Iu">
-                                                        <rect key="frame" x="241" y="12" width="35" height="34"/>
+                                                        <rect key="frame" x="241" y="23.5" width="35" height="34"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                         </accessibility>
                                                         <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="idw-Gk-BcP"/>
                                                             <constraint firstAttribute="width" constant="35" id="n25-tZ-aSC"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
@@ -438,7 +440,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                             <bool key="isElement" value="NO"/>
                                                         </accessibility>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -451,7 +453,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="118" id="dgo-Ge-eMw"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -473,20 +475,20 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="fHn-md-Rss" userLabel="Stack View4">
-                                                <rect key="frame" x="22" y="771" width="249" height="12"/>
+                                                <rect key="frame" x="22" y="771" width="249" height="31.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Run Length (Inches" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkf-EV-qpK">
-                                                        <rect key="frame" x="0.0" y="0.0" width="135" height="12"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="135" height="31.5"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                             <bool key="isElement" value="NO"/>
                                                         </accessibility>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="CalcRunLength" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLv-u8-Dhf" userLabel="CalcRunLength">
-                                                        <rect key="frame" x="149" y="0.0" width="100" height="12"/>
+                                                        <rect key="frame" x="149" y="0.0" width="100" height="31.5"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                             <bool key="isElement" value="NO"/>
@@ -494,14 +496,14 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="eTO-bF-cIM"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYH-Ka-V0L">
-                                                <rect key="frame" x="37.5" y="823" width="260" height="40"/>
+                                                <rect key="frame" x="37.5" y="842.5" width="260" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="vzS-8w-mC7"/>
@@ -526,7 +528,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                             <constraint firstAttribute="height" constant="40" id="3Nm-sU-BTd"/>
                                                             <constraint firstAttribute="width" constant="154" id="RnT-Gl-ylA"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -536,7 +538,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="8Ae-SK-hiO"/>
                                                             <constraint firstAttribute="width" constant="40" id="dmm-O8-dpe"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tuH-Yj-NQ1">
@@ -544,7 +546,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="30" id="P1L-y6-dsH"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="/16" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAq-WN-OcP">
@@ -552,7 +554,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="37" id="b5Q-vE-pNZ"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
@@ -738,10 +740,10 @@ Following is a link to the article.  Rule 1 states: Rise + Run = 18 Rule 2
                                 <rect key="frame" x="0.0" y="64" width="375" height="936"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" restorationIdentifier="AboutContent" translatesAutoresizingMaskIntoConstraints="NO" id="6sC-OT-Sn2" userLabel="ContentAboutView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="962"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="936"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-256" translatesAutoresizingMaskIntoConstraints="NO" id="FVT-Fj-HdI">
-                                                <rect key="frame" x="59.5" y="35" width="256" height="117"/>
+                                                <rect key="frame" x="59.5" y="34" width="256" height="117"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                                 </accessibility>
@@ -752,7 +754,7 @@ Following is a link to the article.  Rule 1 states: Rise + Run = 18 Rule 2
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSc-Lh-mMA">
-                                                <rect key="frame" x="25" y="180" width="325" height="597"/>
+                                                <rect key="frame" x="25" y="179" width="325" height="597"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -771,7 +773,7 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AK-0q-h1N">
-                                                <rect key="frame" x="53.5" y="809" width="268" height="36"/>
+                                                <rect key="frame" x="53.5" y="783" width="268" height="36"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                                 <state key="normal" title="  Click to see the Website -&gt;  ">
@@ -786,7 +788,7 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="sSc-Lh-mMA" secondAttribute="trailing" constant="25" id="47x-n8-2Ei"/>
                                             <constraint firstItem="FVT-Fj-HdI" firstAttribute="centerX" secondItem="6sC-OT-Sn2" secondAttribute="centerX" id="Cc3-kA-lH8"/>
-                                            <constraint firstItem="FVT-Fj-HdI" firstAttribute="top" secondItem="6sC-OT-Sn2" secondAttribute="top" constant="35" id="Sar-Pb-7tO"/>
+                                            <constraint firstItem="FVT-Fj-HdI" firstAttribute="top" relation="lessThanOrEqual" secondItem="6sC-OT-Sn2" secondAttribute="top" constant="34" id="Sar-Pb-7tO"/>
                                             <constraint firstItem="FVT-Fj-HdI" firstAttribute="leading" secondItem="6sC-OT-Sn2" secondAttribute="leading" constant="59.5" id="UbJ-fl-OzY"/>
                                             <constraint firstItem="8AK-0q-h1N" firstAttribute="centerX" secondItem="sSc-Lh-mMA" secondAttribute="centerX" id="Xkc-pv-LhF"/>
                                             <constraint firstItem="sSc-Lh-mMA" firstAttribute="centerX" secondItem="6sC-OT-Sn2" secondAttribute="centerX" id="Xtb-Qf-Km0"/>
@@ -795,7 +797,7 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                             <constraint firstItem="sSc-Lh-mMA" firstAttribute="leading" secondItem="6sC-OT-Sn2" secondAttribute="leading" constant="25" id="j3f-Wd-MmR"/>
                                             <constraint firstAttribute="bottom" secondItem="8AK-0q-h1N" secondAttribute="bottom" constant="117" id="kRk-XB-QuI"/>
                                             <constraint firstAttribute="trailing" secondItem="FVT-Fj-HdI" secondAttribute="trailing" constant="59.5" id="pXR-h1-mAD"/>
-                                            <constraint firstItem="8AK-0q-h1N" firstAttribute="top" secondItem="sSc-Lh-mMA" secondAttribute="bottom" constant="32" id="xZB-ui-51a"/>
+                                            <constraint firstItem="8AK-0q-h1N" firstAttribute="top" secondItem="sSc-Lh-mMA" secondAttribute="bottom" constant="7" id="xZB-ui-51a"/>
                                         </constraints>
                                     </view>
                                 </subviews>

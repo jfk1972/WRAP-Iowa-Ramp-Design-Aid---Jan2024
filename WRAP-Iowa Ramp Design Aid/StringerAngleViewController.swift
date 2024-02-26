@@ -62,7 +62,7 @@ class StringerAngleViewController: UIViewController, UITextFieldDelegate
         self.heightFirstPart.resignFirstResponder()
         self.heightSecondPart.resignFirstResponder()
         
-        AngleScrollView.setContentOffset(CGPoint(x: 0, y: 0),animated: true)
+        AngleScrollView.setContentOffset(CGPoint(x: 0, y: 100),animated: true)
         
         let cutAngle = Int(asin(stringerTotalHeight/stringerTotalLength)*180/3.1416)
         

@@ -68,7 +68,7 @@ class NewStairRiserCalculationView: UIViewController, UITextFieldDelegate
         self.StepHgtWhole.resignFirstResponder()
         self.StepHgtNumerator.resignFirstResponder()
         
-        RiserScrollView.setContentOffset(CGPoint(x: 0, y: 0),animated: true)
+        RiserScrollView.setContentOffset(CGPoint(x: 0, y: 850),animated: true)
         
         //process the inputs
         var secondPartFraction = 1.5
