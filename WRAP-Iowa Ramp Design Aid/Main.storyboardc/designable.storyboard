@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aLN-wd-qdy">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -15,7 +15,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aLN-wd-qdy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dH6-IL-lnB">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -173,11 +173,11 @@ Use the buttons below to select the functionality that you wish to exercise or 
             <objects>
                 <viewController title="Stair Riser Illustration" id="GOO-B8-SnU" customClass="StairRisers" customModule="WRAP_Iowa_Ramp_Design_Aid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fOC-B2-3tp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stair Riser Illustration" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vB8-Lp-tu6">
-                                <rect key="frame" x="67" y="594.5" width="260" height="23.5"/>
+                                <rect key="frame" x="67" y="495.5" width="260" height="23.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="hUU-Ll-Hub"/>
                                 </constraints>
@@ -186,10 +186,10 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50d-o0-eHY" userLabel="StairRiserScrollView">
-                                <rect key="frame" x="0.0" y="64" width="375" height="467.5"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="368.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stair Riser Illustration" translatesAutoresizingMaskIntoConstraints="NO" id="d42-b4-ssP">
-                                        <rect key="frame" x="0.0" y="37.5" width="845" height="395.5"/>
+                                        <rect key="frame" x="0.0" y="37.5" width="721" height="312"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                         </accessibility>
@@ -234,11 +234,11 @@ Use the buttons below to select the functionality that you wish to exercise or 
             <objects>
                 <viewController title="Stringer Cut Angle Illustration" id="NFz-T7-cbw" customClass="StringerCutAngle" customModule="WRAP_Iowa_Ramp_Design_Aid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qRA-oo-NKg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stringer Cut Angle Illustration" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2Y-pN-cab">
-                                <rect key="frame" x="57.5" y="566" width="260" height="24"/>
+                                <rect key="frame" x="30" y="467" width="260" height="24"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                     <bool key="isElement" value="NO"/>
@@ -252,10 +252,10 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DPR-Xu-MIP" userLabel="StringerImageScrollView">
-                                <rect key="frame" x="0.0" y="64" width="375" height="472"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="373"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stringer Cut Angle Illustration" translatesAutoresizingMaskIntoConstraints="NO" id="m4E-9D-kRj">
-                                        <rect key="frame" x="0.0" y="206" width="445" height="108.5"/>
+                                        <rect key="frame" x="0.0" y="206" width="379.5" height="85.5"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                         </accessibility>
@@ -302,11 +302,11 @@ Use the buttons below to select the functionality that you wish to exercise or 
             <objects>
                 <viewController title="RiserOverrideViewController" id="Kkr-2M-v4u" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b6L-CP-Wta">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="KyQ-pO-n3w">
-                                <rect key="frame" x="54" y="57" width="267" height="617.5"/>
+                                <rect key="frame" x="26.5" y="7.5" width="267" height="617.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="Icon-256" translatesAutoresizingMaskIntoConstraints="NO" id="NaQ-pl-wM0">
                                         <rect key="frame" x="0.0" y="0.0" width="267" height="117"/>
@@ -353,7 +353,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="StringerScroll" translatesAutoresizingMaskIntoConstraints="NO" id="ciF-4I-e9c" userLabel="ScrollStringerView">
-                                <rect key="frame" x="0.0" y="77" width="335" height="905"/>
+                                <rect key="frame" x="0.0" y="77" width="335" height="934.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" restorationIdentifier="StringerContent" translatesAutoresizingMaskIntoConstraints="NO" id="adJ-Sq-cOb" userLabel="ContentStringerView">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="934.5"/>
@@ -592,7 +592,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="adJ-Sq-cOb" secondAttribute="trailing" id="CAC-Rp-PMm"/>
-                                    <constraint firstItem="adJ-Sq-cOb" firstAttribute="height" secondItem="Gyb-fj-eE9" secondAttribute="height" multiplier="1.0325" id="CT1-wB-cP7"/>
+                                    <constraint firstItem="adJ-Sq-cOb" firstAttribute="height" secondItem="Gyb-fj-eE9" secondAttribute="height" id="CT1-wB-cP7"/>
                                     <constraint firstItem="adJ-Sq-cOb" firstAttribute="top" secondItem="Qb1-5R-3sl" secondAttribute="top" id="QMh-PB-EmD"/>
                                     <constraint firstItem="adJ-Sq-cOb" firstAttribute="centerX" secondItem="ciF-4I-e9c" secondAttribute="centerX" id="hgV-jI-49y"/>
                                     <constraint firstAttribute="bottom" secondItem="adJ-Sq-cOb" secondAttribute="bottom" constant="-10" id="osf-mV-eTn"/>
@@ -795,7 +795,7 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                             <constraint firstItem="8AK-0q-h1N" firstAttribute="leading" secondItem="6sC-OT-Sn2" secondAttribute="leading" constant="53.5" id="ds9-wH-jW8"/>
                                             <constraint firstItem="sSc-Lh-mMA" firstAttribute="top" secondItem="FVT-Fj-HdI" secondAttribute="bottom" constant="28" id="hDz-0V-ppq"/>
                                             <constraint firstItem="sSc-Lh-mMA" firstAttribute="leading" secondItem="6sC-OT-Sn2" secondAttribute="leading" constant="25" id="j3f-Wd-MmR"/>
-                                            <constraint firstAttribute="bottom" secondItem="8AK-0q-h1N" secondAttribute="bottom" constant="117" id="kRk-XB-QuI"/>
+                                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="8AK-0q-h1N" secondAttribute="bottom" constant="117" id="kRk-XB-QuI"/>
                                             <constraint firstAttribute="trailing" secondItem="FVT-Fj-HdI" secondAttribute="trailing" constant="59.5" id="pXR-h1-mAD"/>
                                             <constraint firstItem="8AK-0q-h1N" firstAttribute="top" secondItem="sSc-Lh-mMA" secondAttribute="bottom" constant="7" id="xZB-ui-51a"/>
                                         </constraints>
@@ -834,11 +834,11 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
             <objects>
                 <viewController title="StairRiserCalculator" id="NKg-zI-8aF" customClass="NewStairRiserCalculationView" customModule="WRAP_Iowa_Ramp_Design_Aid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JPj-uQ-Tkg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGg-hn-bDl">
-                                <rect key="frame" x="0.0" y="64" width="350" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="350" height="504"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6r9-Tr-pgW">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="1628"/>
