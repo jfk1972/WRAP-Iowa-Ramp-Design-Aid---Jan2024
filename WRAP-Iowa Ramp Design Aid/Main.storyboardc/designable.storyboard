@@ -353,13 +353,13 @@ Use the buttons below to select the functionality that you wish to exercise or 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="StringerScroll" translatesAutoresizingMaskIntoConstraints="NO" id="ciF-4I-e9c" userLabel="ScrollStringerView">
-                                <rect key="frame" x="0.0" y="77" width="335" height="934.5"/>
+                                <rect key="frame" x="0.0" y="77" width="375" height="923"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" restorationIdentifier="StringerContent" translatesAutoresizingMaskIntoConstraints="NO" id="adJ-Sq-cOb" userLabel="ContentStringerView">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="934.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="923"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-256" translatesAutoresizingMaskIntoConstraints="NO" id="Elb-zX-JV0">
-                                                <rect key="frame" x="39.5" y="35" width="256" height="117"/>
+                                                <rect key="frame" x="59.5" y="35" width="256" height="117"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                                 </accessibility>
@@ -370,7 +370,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrJ-eW-JMS">
-                                                <rect key="frame" x="20" y="180" width="295" height="202"/>
+                                                <rect key="frame" x="20" y="180" width="335" height="202"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -381,10 +381,10 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="uFg-4a-Eeg" userLabel="Stack View1">
-                                                <rect key="frame" x="20" y="399" width="276" height="81"/>
+                                                <rect key="frame" x="20" y="399" width="316" height="81"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Enter Total Stringer  Length (Inches)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9y-EG-KZD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="81"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="81"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                             <bool key="isElement" value="NO"/>
@@ -394,7 +394,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="FirstRiserHeightEntry" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="168" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3TJ-fR-SjK" userLabel="FirstRiserHeightEntry">
-                                                        <rect key="frame" x="157" y="23" width="40" height="35"/>
+                                                        <rect key="frame" x="197" y="23" width="40" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="nZO-OT-V32"/>
                                                             <constraint firstAttribute="height" constant="35" id="wbM-ut-fug"/>
@@ -406,7 +406,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         </connections>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="SecondRiserHeightEntry" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yB8-DD-G2d" userLabel="SecondRiserHeightEntry">
-                                                        <rect key="frame" x="204" y="23.5" width="30" height="34"/>
+                                                        <rect key="frame" x="244" y="23.5" width="30" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="30" id="aEN-On-Eya"/>
                                                         </constraints>
@@ -414,7 +414,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="/16" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KXy-rz-3Iu">
-                                                        <rect key="frame" x="241" y="23.5" width="35" height="34"/>
+                                                        <rect key="frame" x="281" y="23.5" width="35" height="34"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                         </accessibility>
@@ -432,7 +432,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="U9B-hv-q7o" userLabel="Stack View3">
-                                                <rect key="frame" x="22" y="667" width="263" height="80"/>
+                                                <rect key="frame" x="62" y="667" width="263" height="80"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" text="Cut Angle (Degrees)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5W-jO-MN4">
                                                         <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
@@ -460,7 +460,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9h-nV-x1A">
-                                                <rect key="frame" x="22" y="601" width="95" height="44"/>
+                                                <rect key="frame" x="62" y="601" width="95" height="44"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="95" id="7ur-eW-Tux"/>
@@ -475,10 +475,10 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="fHn-md-Rss" userLabel="Stack View4">
-                                                <rect key="frame" x="22" y="771" width="249" height="31.5"/>
+                                                <rect key="frame" x="62" y="771" width="249" height="20"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Run Length (Inches" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkf-EV-qpK">
-                                                        <rect key="frame" x="0.0" y="0.0" width="135" height="31.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="135" height="20"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                             <bool key="isElement" value="NO"/>
@@ -488,7 +488,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="CalcRunLength" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLv-u8-Dhf" userLabel="CalcRunLength">
-                                                        <rect key="frame" x="149" y="0.0" width="100" height="31.5"/>
+                                                        <rect key="frame" x="149" y="0.0" width="100" height="20"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                             <bool key="isElement" value="NO"/>
@@ -503,7 +503,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYH-Ka-V0L">
-                                                <rect key="frame" x="37.5" y="842.5" width="260" height="40"/>
+                                                <rect key="frame" x="37.5" y="831" width="300" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="vzS-8w-mC7"/>
@@ -516,24 +516,24 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="N7M-wa-AH2" userLabel="Stack View2">
-                                                <rect key="frame" x="20" y="504" width="285" height="40"/>
+                                                <rect key="frame" x="20" y="504" width="325" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Enter Total End-To-End  Height (Inches)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Le1-tJ-lmb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="154" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="194" height="40"/>
                                                         <accessibility key="accessibilityConfiguration">
                                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                             <bool key="isElement" value="NO"/>
                                                         </accessibility>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="3Nm-sU-BTd"/>
-                                                            <constraint firstAttribute="width" constant="154" id="RnT-Gl-ylA"/>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="154" id="RnT-Gl-ylA"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="StringerHeightEntry" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="28" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EqT-Hf-mBe" userLabel="StringerHeightEntry">
-                                                        <rect key="frame" x="162" y="3" width="40" height="34"/>
+                                                        <rect key="frame" x="202" y="3" width="40" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="8Ae-SK-hiO"/>
                                                             <constraint firstAttribute="width" constant="40" id="dmm-O8-dpe"/>
@@ -542,7 +542,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tuH-Yj-NQ1">
-                                                        <rect key="frame" x="210" y="3" width="30" height="34"/>
+                                                        <rect key="frame" x="250" y="3" width="30" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="30" id="P1L-y6-dsH"/>
                                                         </constraints>
@@ -550,7 +550,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="/16" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAq-WN-OcP">
-                                                        <rect key="frame" x="248" y="3" width="37" height="34"/>
+                                                        <rect key="frame" x="288" y="3" width="37" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="37" id="b5Q-vE-pNZ"/>
                                                         </constraints>
@@ -613,6 +613,7 @@ Use the buttons below to select the functionality that you wish to exercise or 
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iKY-Op-jR2"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="1000"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="AngleScrollView" destination="ciF-4I-e9c" id="4Vw-eK-3bk"/>
@@ -838,16 +839,16 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGg-hn-bDl">
-                                <rect key="frame" x="0.0" y="64" width="350" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="326" height="504"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6r9-Tr-pgW">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="1628"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="1628"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68O-YP-AOE" userLabel="IconView">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="138"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="326" height="138"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-256" translatesAutoresizingMaskIntoConstraints="NO" id="ZOV-I4-fpj">
-                                                        <rect key="frame" x="20" y="8" width="310" height="125"/>
+                                                        <rect key="frame" x="20" y="8" width="286" height="125"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="125" id="ra5-LI-Agw"/>
                                                         </constraints>
@@ -861,10 +862,10 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMP-jB-Owb" userLabel="InstructionView">
-                                                <rect key="frame" x="0.0" y="143" width="350" height="470"/>
+                                                <rect key="frame" x="0.0" y="143" width="326" height="470"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wwb-KX-9kW">
-                                                        <rect key="frame" x="20" y="10" width="310" height="450"/>
+                                                        <rect key="frame" x="20" y="10" width="286" height="450"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="450" id="av7-mF-uWS"/>
@@ -884,10 +885,10 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0H-62-j8T" userLabel="OverrideTextView">
-                                                <rect key="frame" x="0.0" y="618" width="350" height="180"/>
+                                                <rect key="frame" x="0.0" y="618" width="326" height="180"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EuE-WN-V4g">
-                                                        <rect key="frame" x="20" y="10" width="310" height="160"/>
+                                                        <rect key="frame" x="20" y="10" width="286" height="160"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="160" id="T1e-Rf-KYW"/>
@@ -907,19 +908,19 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9os-Fw-9Gu" userLabel="ManualOverrideView">
-                                                <rect key="frame" x="0.0" y="803" width="350" height="60"/>
+                                                <rect key="frame" x="0.0" y="803" width="326" height="60"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="wog-97-2VA">
-                                                        <rect key="frame" x="20" y="10" width="310" height="40"/>
+                                                        <rect key="frame" x="20" y="10" width="286" height="40"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Value" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bPi-dj-YyR">
-                                                                <rect key="frame" x="0.0" y="3" width="61" height="34"/>
+                                                                <rect key="frame" x="0.0" y="3" width="37" height="34"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ar-tJ-CgO">
-                                                                <rect key="frame" x="118" y="2" width="192" height="36"/>
+                                                                <rect key="frame" x="94" y="2" width="192" height="36"/>
                                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="192" id="YfF-hG-vQI"/>
@@ -946,10 +947,10 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUr-uY-tib" userLabel="EnterDataTextView">
-                                                <rect key="frame" x="0.0" y="868" width="350" height="170"/>
+                                                <rect key="frame" x="0.0" y="868" width="326" height="170"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F4v-m6-ehy">
-                                                        <rect key="frame" x="20" y="10" width="310" height="150"/>
+                                                        <rect key="frame" x="20" y="10" width="286" height="150"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="150" id="71U-xS-VRu"/>
@@ -968,7 +969,7 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlb-Nh-VdY" userLabel="EnterDataView">
-                                                <rect key="frame" x="0.0" y="1043" width="350" height="80"/>
+                                                <rect key="frame" x="0.0" y="1043" width="326" height="80"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="103" translatesAutoresizingMaskIntoConstraints="NO" id="Dya-Vv-InA">
                                                         <rect key="frame" x="20" y="20" width="341" height="40"/>
@@ -1019,10 +1020,10 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsK-5O-3Ts" userLabel="CalculateButtonView">
-                                                <rect key="frame" x="0.0" y="1128" width="350" height="60"/>
+                                                <rect key="frame" x="0.0" y="1128" width="326" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bre-4U-Ojk">
-                                                        <rect key="frame" x="20" y="10" width="310" height="40"/>
+                                                        <rect key="frame" x="20" y="10" width="286" height="40"/>
                                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="7F3-5D-tKp"/>
@@ -1044,10 +1045,10 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="srX-NF-uDS" userLabel="RiserMinMaxView">
-                                                <rect key="frame" x="0.0" y="1193" width="350" height="60"/>
+                                                <rect key="frame" x="0.0" y="1193" width="326" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Riser Min 4&quot; / Max 7 3/4&quot;" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjK-xs-IhA">
-                                                        <rect key="frame" x="20" y="10" width="310" height="40"/>
+                                                        <rect key="frame" x="20" y="10" width="286" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="JzR-s5-n3c"/>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="vlv-FJ-7rd"/>
@@ -1065,7 +1066,7 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="diS-CK-da7" userLabel="Suggested#ofRisersView">
-                                                <rect key="frame" x="0.0" y="1258" width="350" height="70"/>
+                                                <rect key="frame" x="0.0" y="1258" width="326" height="70"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="43Q-rg-jNy">
                                                         <rect key="frame" x="20" y="10" width="312" height="50"/>
@@ -1104,7 +1105,7 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3HB-P0-aub" userLabel="LowestLevelRiserHgtView">
-                                                <rect key="frame" x="0.0" y="1333" width="350" height="70"/>
+                                                <rect key="frame" x="0.0" y="1333" width="326" height="70"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vel-hB-F6J">
                                                         <rect key="frame" x="20" y="10" width="310" height="50"/>
@@ -1143,10 +1144,10 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bM-ad-YhQ" userLabel="RemainingRiserHgtView">
-                                                <rect key="frame" x="0.0" y="1408" width="350" height="70"/>
+                                                <rect key="frame" x="0.0" y="1408" width="326" height="70"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="b3i-Hr-5pY">
-                                                        <rect key="frame" x="20" y="10" width="310" height="50"/>
+                                                        <rect key="frame" x="-4" y="10" width="310" height="50"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining Riser  Heights" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehe-cB-Fm2">
                                                                 <rect key="frame" x="0.0" y="0.0" width="155" height="50"/>
@@ -1178,12 +1179,11 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="b3i-Hr-5pY" secondAttribute="bottom" constant="10" id="QKI-DA-hOp"/>
                                                     <constraint firstAttribute="trailing" secondItem="b3i-Hr-5pY" secondAttribute="trailing" constant="20" id="RMO-QI-vA3"/>
-                                                    <constraint firstItem="b3i-Hr-5pY" firstAttribute="leading" secondItem="0bM-ad-YhQ" secondAttribute="leading" constant="20" id="YTY-FE-J0M"/>
                                                     <constraint firstItem="b3i-Hr-5pY" firstAttribute="top" secondItem="0bM-ad-YhQ" secondAttribute="top" constant="10" id="b9j-BL-C97"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1A-yy-rtU" userLabel="2x12RequiredView">
-                                                <rect key="frame" x="0.0" y="1483" width="350" height="70"/>
+                                                <rect key="frame" x="0.0" y="1483" width="326" height="70"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Dnl-SE-02u">
                                                         <rect key="frame" x="20" y="10" width="310" height="50"/>
@@ -1223,10 +1223,10 @@ WRAP volunteers offer free labor and, if needed, help clients find financial ass
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSQ-Ok-tLQ" userLabel="StairsIllustrationView">
-                                                <rect key="frame" x="0.0" y="1558" width="350" height="70"/>
+                                                <rect key="frame" x="0.0" y="1558" width="326" height="70"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5K8-nu-3nF">
-                                                        <rect key="frame" x="20" y="20" width="310" height="40"/>
+                                                        <rect key="frame" x="20" y="20" width="286" height="40"/>
                                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="EDy-vZ-3ky"/>
