@@ -216,7 +216,7 @@ class NewStairRiserCalculationView: UIViewController, UITextFieldDelegate
         print(thing1)
         print(thing2)
         print("Board Length \(BoardLength)")
-        TwoxTenNeeded.text = String(Int(BoardLength)) + String("  inches per stringer")
+        TwoxTenNeeded.text = String(Int(BoardLength)) + String("  inches per stringer. Recommend 3 stringers.")
         
     }
 }
