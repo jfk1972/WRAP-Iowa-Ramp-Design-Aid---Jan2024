@@ -26,6 +26,14 @@ class NewStairRiserCalculationView: UIViewController, UITextFieldDelegate
     //outlet to move text field
     @IBOutlet weak var RiserScrollView: UIScrollView!
     
+   /*
+    //code to add a DONE button
+    var toolbar = UIToolbar()
+*/
+    
+    
+   
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -35,7 +43,22 @@ class NewStairRiserCalculationView: UIViewController, UITextFieldDelegate
         RemainingRiserHgt.text = String("")
         TwoxTenNeeded.text = String("")
         manualOverrideRisers.text = "0"
+        
+       /*
+        //code to add a DONE button
+        StepHgtWhole.inputAccessoryView = toolbar
+        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(doneClicked))
+        toolbar.setItems([doneButton], animated: false)
+*/
+
+        
     }
+   /*
+    // add done button
+    @objc func doneClicked() {
+        view.endEditing(true)
+    }
+    */
     
     //move textfiields
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -68,7 +91,7 @@ class NewStairRiserCalculationView: UIViewController, UITextFieldDelegate
         self.StepHgtWhole.resignFirstResponder()
         self.StepHgtNumerator.resignFirstResponder()
         
-        RiserScrollView.setContentOffset(CGPoint(x: 0, y: 850),animated: true)
+        RiserScrollView.setContentOffset(CGPoint(x: 0, y: 1200),animated: true)
         
         //process the inputs
         var secondPartFraction = 1.5

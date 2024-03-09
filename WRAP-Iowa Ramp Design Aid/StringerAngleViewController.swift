@@ -22,21 +22,43 @@ class StringerAngleViewController: UIViewController, UITextFieldDelegate
     
     @IBOutlet weak var AngleScrollView: UIScrollView!
     
+    // Add to dismiss keyboard
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
         cutAngleLable.text = "0"
         totalRunLabel.text = "0"
+        
+
+        
     }
     
     //move textfiields
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        AngleScrollView.setContentOffset(CGPoint(x: 0, y: 350),animated: true)
+        AngleScrollView.setContentOffset(CGPoint(x: 0, y: 250),animated: true)
     }
     
     @IBAction func CalcRisers(_ sender: UIButton)
     {
+        // Add a "DONE" button to the keyboard toolbar
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissKeyboard))
+        toolbar.items = [flexibleSpace, doneButton]
+        
+        // Additions for DONE button
+        lengthFirstPart.inputAccessoryView = toolbar
+        lengthSecondPart.inputAccessoryView = toolbar
+        heightFirstPart.inputAccessoryView = toolbar
+        heightSecondPart.inputAccessoryView = toolbar
+        
+        
         let stringerLength1 = Double(lengthFirstPart.text!)
         var stringerLength2 = Double(lengthSecondPart.text!)
         
@@ -57,12 +79,14 @@ class StringerAngleViewController: UIViewController, UITextFieldDelegate
         let stringerTotalHeight = Double(stringerHeight1!) + Double(stringerHeight2!)
         
         //return scrollview to normal position
-        self.lengthFirstPart.resignFirstResponder()
-        self.lengthSecondPart.resignFirstResponder()
-        self.heightFirstPart.resignFirstResponder()
-        self.heightSecondPart.resignFirstResponder()
+    //    self.lengthFirstPart.resignFirstResponder()
+    //    self.lengthSecondPart.resignFirstResponder()
+     //   self.heightFirstPart.resignFirstResponder()
+    //    self.heightSecondPart.resignFirstResponder()
+      
+
         
-        AngleScrollView.setContentOffset(CGPoint(x: 0, y: 100),animated: true)
+        AngleScrollView.setContentOffset(CGPoint(x: 0, y: 350),animated: true)
         
         let cutAngle = Int(asin(stringerTotalHeight/stringerTotalLength)*180/3.1416)
         
