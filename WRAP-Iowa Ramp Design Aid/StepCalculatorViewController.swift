@@ -23,6 +23,10 @@ class NewStairRiserCalculationView: UIViewController, UITextFieldDelegate
     @IBOutlet weak var TwoxTenNeeded: UILabel!
     @IBOutlet weak var manualOverrideRisers: UITextField!
     
+    // These are the outlets for Handrail Angle and horizontal run distance
+    @IBOutlet weak var StairRun: UILabel!
+    @IBOutlet weak var HandRailAngle: UILabel!
+   
     //outlet to move text field
     @IBOutlet weak var RiserScrollView: UIScrollView!
     
@@ -43,6 +47,10 @@ class NewStairRiserCalculationView: UIViewController, UITextFieldDelegate
         RemainingRiserHgt.text = String("")
         TwoxTenNeeded.text = String("")
         manualOverrideRisers.text = "0"
+        StairRun.text = ""
+        HandRailAngle.text = ""
+        TwoxTenNeeded.numberOfLines = 4
+        
         
        /*
         //code to add a DONE button
@@ -239,8 +247,33 @@ class NewStairRiserCalculationView: UIViewController, UITextFieldDelegate
         print(thing1)
         print(thing2)
         print("Board Length \(BoardLength)")
-        TwoxTenNeeded.text = String(Int(BoardLength)) + String("  inches per stringer. Recommend 3 stringers.")
+        TwoxTenNeeded.text = String(Int(BoardLength)) + String(" inches per stringer. Recommend 3 stringers.")
         
+        
+        // This is the code to add the Handrail Cut Angle and the horizontal run distance
+        
+        let degreeSymbol = "\u{00B0}"
+        var hypotenuse = 1.1416
+        hypotenuse = sqrt((pow(11,2)*(pow(stairHeight,2))))
+        
+        let cutAngle = atan(Double(stairHeight) / (Double(totalRisers) * 11))*100
+        // let cutAngle = asin(Double(stairHeight) / (Double(hypotenuse) * 11) * 180 / 3.1416)
+        print("stairHeight \(stairHeight)")
+        print("totalRisers \(totalRisers)")
+        print("cutAngle \(cutAngle)")
+        print("hypotenuse \(hypotenuse)")
+
+        // this is the horizontal distance covered by the stringer that is at an angle
+        let horizRun = totalRisers*11
+        //let horizRun = Double(sqrt(pow(Double(totalRisers * 11), 2)) - pow(Double(stairHeight), 2))
+        print("totalRisers \(totalRisers)")
+        print("stairHeight \(stairHeight)")
+        print("horizRun \(horizRun)")
+
+        HandRailAngle.text = String(format: "%.1f", cutAngle) + String(degreeSymbol)
+        StairRun.text = String(horizRun) + ("\" ")
+              
+      //  let cutAngle = Int(asin(stringerTotalHeight/stringerTotalLength)*180/3.1416)
     }
 }
 
